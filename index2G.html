@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+  		<html>
+  		<head>
+  			<title>Documentation 2G</title>
+
+  			<link href="style2G.css" rel="stylesheet" type="text/css"/>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<script src="2G.js"></script>
+
+  		</head>
+
+  		<body>
+
+  		<div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <nav id="spy">
+                <ul class="sidebar-nav nav">
+                    <li class="sidebar-brand">
+                        <a href="index.html"><span class="fa fa-home solo">Home</span></a>
+                    </li>
+                    <li>
+                        <a href="#anch1" data-scroll>
+                            <span class="fa fa-anchor solo">RXLev</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#anch2" data-scroll>
+                            <span class="fa fa-anchor solo">RXQual</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#anch3" data-scroll>
+                            <span class="fa fa-anchor solo">Coverage</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#anch4" data-scroll>
+                            <span class="fa fa-anchor solo">FER</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Page content -->
+        <div id="page-content-wrapper">
+            <div class="content-header">
+                <h1 id="home">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    Documentation 2G
+                </h1>
+            </div>
+
+            <div class="page-content inset" data-spy="scroll" data-target="#spy">
+                
+                <div class="row">
+                    <div class="col-md-12 well">
+                        <legend id="anch1">RXLev</legend>
+                        <table style="width:70%">
+                              <tr>
+                                <th>Level (dBm)</th>
+                                <th>Quality</th> 
+                                <th>Color</th>
+                              </tr>
+                              <tr>
+                                <td>-65 -----------> -46</td>
+                                <td>Very Good Coverage</td>
+                                <td><canvas id="myCanvas" width="10" height="10"></canvas>
+                                        <script>
+                                          var canvas = document.getElementById('myCanvas');
+                                          var context = canvas.getContext('2d');
+                                          var centerX = canvas.width / 2;
+                                          var centerY = canvas.height / 2;
+                                          var radius = 10;
+
+                                          context.beginPath();
+                                          context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+                                          context.fillStyle = 'green';
+                                          context.fill();
+                                          context.lineWidth = 5;
+                                          context.strokeStyle = '#003300';
+                                          context.stroke();
+                                        </script></td>
+                              </tr>
+                              <tr>
+                                <td>-75 -----------> -65</td>
+                                <td>Good Coverage</td>
+                                <td><canvas id="myCanvas1" width="10" height="10"></canvas>
+                                        <script>
+                                          var canvas = document.getElementById('myCanvas1');
+                                          var context = canvas.getContext('2d');
+                                          var centerX = canvas.width / 2;
+                                          var centerY = canvas.height / 2;
+                                          var radius = 10;
+
+                                          context.beginPath();
+                                          context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+                                          context.fillStyle = '#32CD32';
+                                          context.fill();
+                                          context.lineWidth = 5;
+                                          context.strokeStyle = '#003300';
+                                          context.stroke();
+                                        </script></td>
+                              </tr>
+                              <tr>
+                                <td>-85 -----------> -75</td>
+                                <td>Poor Coverage</td>
+                                <td><canvas id="myCanvas2" width="10" height="10"></canvas>
+                                        <script>
+                                          var canvas = document.getElementById('myCanvas2');
+                                          var context = canvas.getContext('2d');
+                                          var centerX = canvas.width / 2;
+                                          var centerY = canvas.height / 2;
+                                          var radius = 10;
+
+                                          context.beginPath();
+                                          context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+                                          context.fillStyle = '#000080';
+                                          context.fill();
+                                          context.lineWidth = 5;
+                                          context.strokeStyle = '#003300';
+                                          context.stroke();
+                                        </script></td>
+                              </tr>
+
+                              <tr>
+                                <td>-95 -----------> -85</td>
+                                <td>Bad Coverage</td>
+                                <td><canvas id="myCanvas3" width="10" height="10"></canvas>
+                                        <script>
+                                          var canvas = document.getElementById('myCanvas3');
+                                          var context = canvas.getContext('2d');
+                                          var centerX = canvas.width / 2;
+                                          var centerY = canvas.height / 2;
+                                          var radius = 10;
+
+                                          context.beginPath();
+                                          context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+                                          context.fillStyle = '#FF4500';
+                                          context.fill();
+                                          context.lineWidth = 5;
+                                          context.strokeStyle = '#003300';
+                                          context.stroke();
+                                        </script></td>
+                              </tr>
+
+                              <tr>
+                                <td>-110 -----------> -95</td>
+                                <td>No Coverage</td>
+                                <td><canvas id="myCanvas4" width="10" height="10"></canvas>
+                                        <script>
+                                          var canvas = document.getElementById('myCanvas4');
+                                          var context = canvas.getContext('2d');
+                                          var centerX = canvas.width / 2;
+                                          var centerY = canvas.height / 2;
+                                          var radius = 10;
+
+                                          context.beginPath();
+                                          context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+                                          context.fillStyle = 'red';
+                                          context.fill();
+                                          context.lineWidth = 5;
+                                          context.strokeStyle = '#003300';
+                                          context.stroke();
+                                        </script></td>
+                              </tr>
+                            </table>
+                    </div>
+                    <div class="col-md-12 well">
+                        <legend id="anch2">RXQual</legend>
+                        <table style="width:70%">
+                              <tr>
+                                <th>Level</th>
+                                <th>Quality</th> 
+                                <th>Color</th>
+                              </tr>
+                              <tr>
+                                <td>0 -----------> 2</td>
+                                <td>Very Good</td>
+                                <td><canvas id="myCanvas5" width="10" height="10"></canvas>
+                                        <script>
+                                          var canvas = document.getElementById('myCanvas5');
+                                          var context = canvas.getContext('2d');
+                                          var centerX = canvas.width / 2;
+                                          var centerY = canvas.height / 2;
+                                          var radius = 10;
+
+                                          context.beginPath();
+                                          context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+                                          context.fillStyle = 'green';
+                                          context.fill();
+                                          context.lineWidth = 5;
+                                          context.strokeStyle = '#003300';
+                                          context.stroke();
+                                        </script></td>
+                              </tr>
+                              <tr>
+                                <td>2 -----------> 4</td>
+                                <td>Good</td>
+                                <td><canvas id="myCanvas6" width="10" height="10"></canvas>
+                                        <script>
+                                          var canvas = document.getElementById('myCanvas6');
+                                          var context = canvas.getContext('2d');
+                                          var centerX = canvas.width / 2;
+                                          var centerY = canvas.height / 2;
+                                          var radius = 10;
+
+                                          context.beginPath();
+                                          context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+                                          context.fillStyle = '#32CD32';
+                                          context.fill();
+                                          context.lineWidth = 5;
+                                          context.strokeStyle = '#003300';
+                                          context.stroke();
+                                        </script></td>
+                              </tr>
+                              <tr>
+                                <td>4 -----------> 6</td>
+                                <td>Poor</td>
+                                <td><canvas id="myCanvas7" width="10" height="10"></canvas>
+                                        <script>
+                                          var canvas = document.getElementById('myCanvas7');
+                                          var context = canvas.getContext('2d');
+                                          var centerX = canvas.width / 2;
+                                          var centerY = canvas.height / 2;
+                                          var radius = 10;
+
+                                          context.beginPath();
+                                          context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+                                          context.fillStyle = '#000080';
+                                          context.fill();
+                                          context.lineWidth = 5;
+                                          context.strokeStyle = '#003300';
+                                          context.stroke();
+                                        </script></td>
+                              </tr>
+
+                              <tr>
+                                <td>6 -----------> 7</td>
+                                <td>Bad</td>
+                                <td><canvas id="myCanvas8" width="10" height="10"></canvas>
+                                        <script>
+                                          var canvas = document.getElementById('myCanvas8');
+                                          var context = canvas.getContext('2d');
+                                          var centerX = canvas.width / 2;
+                                          var centerY = canvas.height / 2;
+                                          var radius = 10;
+
+                                          context.beginPath();
+                                          context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+                                          context.fillStyle = 'red';
+                                          context.fill();
+                                          context.lineWidth = 5;
+                                          context.strokeStyle = '#003300';
+                                          context.stroke();
+                                        </script></td>
+                              </tr>
+                            </table>
+                    </div>
+                    <div class="col-md-12 well">
+                        <legend id="anch3">Coverage</legend>
+                        <table style="width:70%">
+                              <tr>
+                                <th>Coverage Status</th>
+                                <th>Intervall (dBm)</th>
+                              </tr>
+                              <tr>
+                                <td>Deep Indoor</td>
+                                <td>-65 <= x < -10</td>
+                              </tr>
+                              <tr>
+                                <td>Indoor</td>
+                                <td>-74 <= x < -65 </td>
+                              </tr>
+                              <tr>
+                                <td>Incar</td>
+                                <td>-82 <= x < -74</td>
+                              </tr>
+                              <tr>
+                                <td>Outdoor</td>
+                                <td>-94 <= x < -82</td>
+                              </tr>
+                              <tr>
+                                <td>No Coverage</td>
+                                <td>-120 <= x < -94</td>
+                              </tr>
+                        </table>
+                    </div>
+                    <div class="col-md-12 well">
+                        <legend id="anch4">FER</legend>
+                    <table style="width:70%">
+                        <tr>
+                            <th>RXQual</th>
+                            <th colspan="2">FER (%)</th>
+                        </tr>
+
+                        <tr>
+                            <th></th>
+                            <th>From</th>
+                            <th>To</th>    
+                        </tr>
+
+                        <tr>
+                            <td>0</td>
+                            <td> < 4.5</td>
+                            <td>4.5</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>1</td>
+                            <td>4.5</td>
+                            <td>8.5</td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>8.5</td>
+                            <td>12.5</td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>12.5</td>
+                            <td>16.5</td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>16.5</td>
+                            <td>20.5</td>
+                        </tr>
+
+                        <tr>
+                            <td>5</td>
+                            <td>20.5</td>
+                            <td>24.5</td>
+                        </tr> 
+
+                        <tr>
+                            <td>6,7</td>
+                            <td>24.5</td>
+                            <td> >24.5</td>
+                        </tr>   
+                    </table>        
+
+                        
+                    </div>
+                </div>
+
+                <div class="navbar navbar-default navbar-static-bottom">
+                    <p class="navbar-text pull-left">
+                        Created by <a href="https://mokhless.github.io/CV" target="_blank">Mokhless Hachicha
+                        <a href="http://www.getwireless-group.com/" target="_blank">Get-Wireless 2016
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+  		
+  		</body>
+  		</html>
