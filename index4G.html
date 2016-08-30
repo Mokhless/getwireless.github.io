@@ -2,7 +2,7 @@
   		<html>
   		<head>
   			<title>Documentation 4G</title>
-
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   			<link href="style4G.css" rel="stylesheet" type="text/css"/>
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -40,14 +40,10 @@
                     </li>
                     <li>
                         <a href="#anch3" data-scroll>
-                            <span class="fa fa-anchor solo">RF Condition</span>
+                            <span class="fa fa-anchor solo">SINR</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="#anch4" data-scroll>
-                            <span class="fa fa-anchor solo">RSSI</span>
-                        </a>
-                    </li>
+                    
                 </ul>
             </nav>
         </div>
@@ -67,6 +63,7 @@
                 <div class="row">
                     <div class="col-md-12 well">
                         <legend id="anch1">RSRP</legend>
+                        <h4>RSRP est la mesure la plus basique réalisée par la couche physique du l’UE, permettant d’obtenir une valeur moyenne de la puissance reçue du signal de référence (RS) émise par la station de base</h4>
                         <table style="width:70%">
                               <tr>
                                 <th>Reported Value</th>
@@ -208,6 +205,8 @@
                     </div>
                     <div class="col-md-12 well">
                         <legend id="anch2">RSRQ</legend>
+                        <h4>Reference Signal Received Quality est une qualité de signal spécifique des cellules métrique.</h4>
+                        <h4>RSRQ=10*log(N*RSRP/RSSI)</h4>
                         <table style="width:70%">
                               <tr>
                                 <th>Reported Value</th>
@@ -348,54 +347,17 @@
                         </table>
                     </div>
                     <div class="col-md-12 well">
-                        <legend id="anch3">RF Condition</legend>
-                        <table style="width:70%">
-                              <tr>
-                                <th>RSRP (dBm)</th>
-                                <th>RSRQ (dB)</th>
-                                <th>SINR (dB)</th>
-                                <th>RF Condition</th> 
-                              </tr>
-
-                              <tr>
-                                <td> >= -80</td>
-                                <td> >= -10</td>
-                                <td> >= 20</td>
-                                <td>Excellent</td>
-                              </tr>
-
-                              <tr>
-                                <td>-80 to -90</td>
-                                <td>-10 to -15</td>
-                                <td>13 to 20 </td>
-                                <td>Good</td>
-                              </tr>
-
-                              <tr>
-                                <td>-90 to -100</td>
-                                <td>-15 to -20</td>
-                                <td>0 to 13 </td>
-                                <td>Mid Cell</td>
-                              </tr>
-
-                              <tr>
-                                <td><= -100</td>
-                                <td>< -20</td>
-                                <td><=0</td>
-                                <td>Cell Edge</td>
-                              </tr>
-                        </table>
-                        
-                    </div>
-                    <div class="col-md-12 well">
-                        <legend id="anch4">RSSI</legend>
-                        <h3> RSSI = RSRP - RSRQ</h3>
+                        <legend id="anch3">SINR</legend>
+                        <h4>SINR = S / (I + N)</h4>
+                        <h5>S: indicates the power of measured usable signals</h5>
+                        <h5>I: indicates the average interference power – the power of measured signals</h5>
+                        <h5>N: indicates background noise, which is related to measurement bandwidths and receiver noise coefficients</h5>
                     </div>
                 </div>
 
                 <div class="navbar navbar-default navbar-static-bottom">
                     <p class="navbar-text pull-left">
-                        Created by <a href="https://mokhless.github.io/CV" target="_blank">Mokhless Hachicha
+                        Created by <a href="https://tn.linkedin.com/in/mokhlesshachicha" target="_blank">Mokhless Hachicha
                         <a href="http://www.getwireless-group.com/" target="_blank">Get-Wireless 2016
                     </p>
                 </div>

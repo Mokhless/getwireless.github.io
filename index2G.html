@@ -2,7 +2,7 @@
   		<html>
   		<head>
   			<title>Documentation 2G</title>
-
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   			<link href="style2G.css" rel="stylesheet" type="text/css"/>
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -40,12 +40,22 @@
                     </li>
                     <li>
                         <a href="#anch3" data-scroll>
-                            <span class="fa fa-anchor solo">Coverage</span>
+                            <span class="fa fa-anchor solo">C/I</span>
                         </a>
                     </li>
                     <li>
                         <a href="#anch4" data-scroll>
                             <span class="fa fa-anchor solo">FER</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#anch5" data-scroll>
+                            <span class="fa fa-anchor solo">Timing Advanced</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#anch6" data-scroll>
+                            <span class="fa fa-anchor solo">KPI</span>
                         </a>
                     </li>
                 </ul>
@@ -66,7 +76,9 @@
                 
                 <div class="row">
                     <div class="col-md-12 well">
+                    <legend>RF Indicator</legend>
                         <legend id="anch1">RXLev</legend>
+                        <h4>RXLev c'est la mesure du niveau de champ recu par le mobile.</h4>
                         <table style="width:70%">
                               <tr>
                                 <th>Level (dBm)</th>
@@ -179,6 +191,7 @@
                     </div>
                     <div class="col-md-12 well">
                         <legend id="anch2">RXQual</legend>
+                        <h4>RXQual c'est la mesure de qualite de signal sortie de secteur</h4>
                         <table style="width:70%">
                               <tr>
                                 <th>Level</th>
@@ -269,36 +282,36 @@
                             </table>
                     </div>
                     <div class="col-md-12 well">
-                        <legend id="anch3">Coverage</legend>
-                        <table style="width:70%">
-                              <tr>
-                                <th>Coverage Status</th>
-                                <th>Intervall (dBm)</th>
-                              </tr>
-                              <tr>
-                                <td>Deep Indoor</td>
-                                <td>-65 <= x < -10</td>
-                              </tr>
-                              <tr>
-                                <td>Indoor</td>
-                                <td>-74 <= x < -65 </td>
-                              </tr>
-                              <tr>
-                                <td>Incar</td>
-                                <td>-82 <= x < -74</td>
-                              </tr>
-                              <tr>
-                                <td>Outdoor</td>
-                                <td>-94 <= x < -82</td>
-                              </tr>
-                              <tr>
-                                <td>No Coverage</td>
-                                <td>-120 <= x < -94</td>
-                              </tr>
-                        </table>
+                        <legend id="anch3">C/I</legend>
+                        <h4>Le rapport signal sur interférence est le rapport de l'intensité du signal de la cellule</h4>
+                        <h5>C : Puissance de signal Utile</h5>
+                        <h5>I : Ensemble des interférences</h5>
+                        <table style="width: 70%">
+                        <tr>
+                          <td>Interference co-canal (fo)</td>
+                          <td>C/Ic</td>
+                          <td>9dB</td>
+                        </tr>
+                        <tr>
+                          <td>Interference 1er canal adjacent</td>
+                          <td>C/Ia1</td>
+                          <td>-9dB</td>
+                        </tr>
+                        <tr>
+                          <td>Interference 2eme canal adjacent</td>
+                          <td>C/Ia2</td>
+                          <td>-41dB</td>
+                        </tr>
+                        <tr>
+                          <td>Interference 3eme canal adjacent</td>
+                          <td>C/Ia3</td>
+                          <td>-49dB</td>
+                        </tr>
+                         </table>
                     </div>
                     <div class="col-md-12 well">
                         <legend id="anch4">FER</legend>
+                        <h4>le FER est un indicateur de niveau de qualité spécifique au taux de rejet de trame.</h4>
                     <table style="width:70%">
                         <tr>
                             <th>RXQual</th>
@@ -356,11 +369,102 @@
 
                         
                     </div>
-                </div>
+                    <div class="col-md-12 well">
+                        <legend id="anch5">Timing Advanced</legend>
+                        <h4>Timing Advenced est le temps d’avance nécessaire pour la compensation du temps aller-retour du signal càd le temps de propagation entre le MS et sa BTS.</h4>
+                        <table style="width:70%">
+                              <tr>
+                                <th>TA</th>
+                                <th>Start</th>
+                                <th>End</th>
+                              </tr>
+                              <tr>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>553.5m</td>
+                              </tr>
+                              <tr>
+                                <td>1</td>
+                                <td>553.5m</td>
+                                <td>1107m</td>
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td>1107m</td>
+                                <td>160.5m</td>
+                              </tr>
+                              <tr>
+                                <td>3</td>
+                                <td>1660.5m</td>
+                                <td>2214m</td>
+                              </tr>
+                              <tr>
+                                <td>...</td>
+                                <td>...</td>
+                                <td>...</td>
+                              </tr>
+                              <tr>
+                                <td>63</td>
+                                <td>34.87km</td>
+                                <td>35.42km</td>
+                              </tr>
+                        </table>
+                    </div>
+                    <div class="col-md-12 well">
+                        <legend id="anch6">KPI</legend>
+                        <table style="width: 100%">
+                            
+                            <tr>
+                              <td rowspan="9">KPI</td>
+                            
+                              <td rowspan="3">Accessibility</td>
+                              <td> Attach Success</td>
+                              <td>Call Attempt - Call Complete</td>
+                            </tr>
+                            <tr>
+                              <td>Session Setup Success</td>
+                              <td>Call Attempt - Dropped Call</td>
+                            </tr>
+                            <tr>
+                              <td>CSSR</td>
+                              <td>(Success Rate of TCH Assignment*Success Rate of Call Setup (Immediate Assignment)/10000)*100</td>
+                            </tr>
+                            <tr>
+                              <td rowspan="2">Retainability</td>
+                              <td>CDR</td>
+                              <td>Dropped Call / (Success Call * 100)</td>
+                            </tr>
+                            <tr>
+                              <td>SDR</td>
+                              <td>SDCCH Drops - SDCCH Sizures</td>
+                            </tr>
+                            <tr>
+                              <td rowspan="2">Mobility</td>
+                              <td>SHOR</td>
+                              <td>Successful Handovers/Handover Requests</td>
+                            </tr>
+                            <tr>
+                              <td>LAS</td>
+                            </tr>  
+                            <tr>
+                              <td rowspan="2">Integrity</td>
+                              <td>App Throughput Du/Ul</td>
+                              <td>Total data received correctly / Total Data Transmitted </td>
+                            </tr>
+                            <tr>
+                              <td>RLC Throughput Du/Ul</td>
+                              <td>Application throughput + RLC </td>
+                            </tr>
 
+                          
+
+                        </table>
+                    </div>
+                </div>
+                
                 <div class="navbar navbar-default navbar-static-bottom">
                     <p class="navbar-text pull-left">
-                        Created by <a href="https://mokhless.github.io/CV" target="_blank">Mokhless Hachicha
+                        Created by <a href="https://tn.linkedin.com/in/mokhlesshachicha" target="_blank">Mokhless Hachicha
                         <a href="http://www.getwireless-group.com/" target="_blank">Get-Wireless 2016
                     </p>
                 </div>

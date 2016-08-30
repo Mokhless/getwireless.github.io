@@ -2,7 +2,7 @@
   		<html>
   		<head>
   			<title>Documentation 3G</title>
-
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   			<link href="style3G.css" rel="stylesheet" type="text/css"/>
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -35,19 +35,15 @@
                     </li>
                     <li>
                         <a href="#anch2" data-scroll>
-                            <span class="fa fa-anchor solo">RSSI</span>
+                            <span class="fa fa-anchor solo">Ec/No</span>
                         </a>
                     </li>
                     <li>
                         <a href="#anch3" data-scroll>
-                            <span class="fa fa-anchor solo">RTWP</span>
+                            <span class="fa fa-anchor solo">TX Power</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="#anch4" data-scroll>
-                            <span class="fa fa-anchor solo">Ec/No</span>
-                        </a>
-                    </li>
+                    
                 </ul>
             </nav>
         </div>
@@ -67,6 +63,7 @@
                 <div class="row">
                     <div class="col-md-12 well">
                         <legend id="anch1">RSCP</legend>
+                        <h4>Received Signal Code Power est la puissance mesurée par un récepteur sur un canal de communication physique particulier</h4>
                         <table style="width:70%">
                               <tr>
                                 <th>RSCP</th>
@@ -114,123 +111,12 @@
                               </tr>
                         </table>
                     </div>
+                    
+                    
                     <div class="col-md-12 well">
-                        <legend id="anch2">RSSI</legend>
-                        <table style="width:70%">
-                              <tr>
-                                <th>RSSI</th>
-                                <th>Value</th>
-                                <th>Range (dBm)</th>
-                              </tr>
-
-                              <tr>
-                                <td>RSSI LEV_00</td>
-                                <td>0</td>
-                                <td>RSSI < -100</td>                              
-                              </tr>
-
-                              <tr>
-                                <td>RSSI LEV_01</td>
-                                <td>1</td>
-                                <td>-100 <= RSSI < -99</td>
-                              </tr>
-
-                              <tr>
-                                <td>RSSI LEV_02</td>
-                                <td>2</td>
-                                <td>-99 <= RSSI < -98</td>
-                              </tr>
-
-                              <tr>
-                                <td>RSSI LEV_03</td>
-                                <td>3</td>
-                                <td>-98 <= RSSI < -97</td>
-                              </tr>
-
-                              <tr>
-                                <td>...</td>
-                                <td>...</td>
-                              </tr>
-
-                              <tr>
-                                <td>RSSI LEV_74</td>
-                                <td>74</td>
-                                <td>-27 <= RSSI < -26</td>
-                              </tr>
-
-                              <tr>
-                                <td>RSSI LEV_75</td>
-                                <td>75</td>
-                                <td>-26 <= RSSI < -25</td>
-                              </tr>
-
-                              <tr>
-                                <td>RSSI LEV_76</td>
-                                <td>76</td>
-                                <td>-25 <= RSSI</td>
-                              </tr>
-                        </table>
-                        
-                    </div>
-                    <div class="col-md-12 well">
-                        <legend id="anch3">RTWP</legend>
-                        <table style="width:70%">
-                              <tr>
-                                <th>RTWP</th>
-                                <th>Value</th>
-                                <th>Range (dBm)</th>
-                              </tr>
-
-                              <tr>
-                                <td>RTWP LEV_000</td>
-                                <td>0</td>
-                                <td>RTWP < -112</td>                              
-                              </tr>
-
-                              <tr>
-                                <td>RTWP LEV_001</td>
-                                <td>1</td>
-                                <td>-112 <= RTWP < -111.9</td>
-                              </tr>
-
-                              <tr>
-                                <td>RTWP LEV_002</td>
-                                <td>2</td>
-                                <td>-111.9 <= RTWP < -111.8</td>
-                              </tr>
-
-                              <tr>
-                                <td>RTWP LEV_003</td>
-                                <td>3</td>
-                                <td>-111.8 <= RTWP < -111.7</td>
-                              </tr>
-
-                              <tr>
-                                <td>...</td>
-                                <td>...</td>
-                              </tr>
-
-                              <tr>
-                                <td>RTWP LEV_619</td>
-                                <td>619</td>
-                                <td>-50.2 <= RTWP < -50.1</td>
-                              </tr>
-
-                              <tr>
-                                <td>RTWP LEV_620</td>
-                                <td>620</td>
-                                <td>-50.1 <= RTWP < -50</td>
-                              </tr>
-
-                              <tr>
-                                <td>RTWP LEV_621</td>
-                                <td>621</td>
-                                <td>-50. <= RTWP</td>
-                              </tr>
-                        </table>
-                    </div>
-                    <div class="col-md-12 well">
-                        <legend id="anch4">Ec/No</legend>
+                        <legend id="anch2">Ec/No</legend>
+                        <h4>Eb: Bit Energy. Il représente la quantité d'énergie par bit.</h4>
+                        <h4>No: Noise Spectral Density. Unit: Watts/Hz (or mWatts/Hz)</h4>
                         <table style="width:70%">
                               <tr>
                                 <th>Ec/No</th>
@@ -273,11 +159,48 @@
                               </tr>
                         </table>
                     </div>
+
+                    <div class="col-md-12 well">
+                        <legend id="anch3">TX Power</legend>
+                        <h4>Ce paramètre détermine la puissance de sortie maximale autorisée à utiliser pendant l'UE est à la cellule de camping</h4>
+                        <table style="width: 70%">
+                        <tr>
+                        <th>Power Class</th>
+                        <th>Nominal maximum output power</th>
+                        <th>Tolerance</th>
+                        </tr>
+
+                        <tr>
+                          <td>1</td>
+                          <td>+33 dBm</td>
+                          <td>+1 dB / -3dB</td>
+                        </tr>
+
+                        <tr>
+                          <td>2</td>
+                          <td>+24 dBm</td>
+                          <td>+1 dB / -3dB</td>
+                        </tr>
+
+                        <tr>
+                          <td>3</td>
+                          <td>+21 dBm</td>
+                          <td>+2 dB / -2 dB</td>
+                        </tr>
+
+                        <tr>
+                          <td>4</td>
+                          <td>+27 dBm</td>
+                          <td>+1 dB / -3 dB</td>
+                        </tr>
+                          
+                        </table>
+                    </div>
                 </div>
 
                 <div class="navbar navbar-default navbar-static-bottom">
                     <p class="navbar-text pull-left">
-                        Created by <a href="https://mokhless.github.io/CV" target="_blank">Mokhless Hachicha
+                        Created by <a href="https://tn.linkedin.com/in/mokhlesshachicha" target="_blank">Mokhless Hachicha
                         <a href="http://www.getwireless-group.com/" target="_blank">Get-Wireless 2016
                     </p>
                 </div>
