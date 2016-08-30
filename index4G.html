@@ -43,7 +43,11 @@
                             <span class="fa fa-anchor solo">SINR</span>
                         </a>
                     </li>
-                    
+                    <li>
+                        <a href="#anch4" data-scroll>
+                            <span class="fa fa-anchor solo">KPI</span>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -352,6 +356,40 @@
                         <h5>S: indicates the power of measured usable signals</h5>
                         <h5>I: indicates the average interference power – the power of measured signals</h5>
                         <h5>N: indicates background noise, which is related to measurement bandwidths and receiver noise coefficients</h5>
+                    </div>
+                    <div class="col-md-12 well">
+                        <legend id="anch4">KPI</legend>
+                        <table style="width: 100%">
+                        <tr>
+                          <td rowspan="7">KPI</td>
+                          <td>Attach success 10 Attmpts per Sector</td>
+                          <td>OK or FAILURE</td>
+                        </tr>
+                        <tr>
+                          <td>LTE Service Request(EPS) Time(ms)</td>
+                          <td>sum(Time Sector) / number of sector</td>
+                        </tr>
+                        <tr>
+                          <td>Ping (0 byte) [ms] (10 pings per sector)</td>
+                          <td>sum (ping of sector) / number of sector</td>
+                        </tr>
+                        <tr>
+                          <td>CSFB (3 attempts per sector) {In/Out} Atempt</td>
+                          <td>OK or FAILURE</td>
+                        </tr>
+                        <tr>
+                          <td>CSFB (3 attempts per sector) {In/Out} Delay</td>
+                          <td>sum (MOC + MTC) / number of sector</td>
+                        </tr>
+                        <tr>
+                          <td>Voice Service Accessibility Ratio CSFB [%] (3 attempts per sector)</td>
+                          <td>OK or FAILURE</td>
+                        </tr>
+                        <tr>
+                          <td>Fast Return from 3G to 4G {In/Out} Delay</td>
+                          <td></td>
+                        </tr>
+                        </table>
                     </div>
                 </div>
 
