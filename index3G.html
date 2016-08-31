@@ -72,48 +72,114 @@
                         <h4>Received Signal Code Power est la puissance mesurée par un récepteur sur un canal de communication physique particulier</h4>
                         <table style="width:70%">
                               <tr>
-                                <th>RSCP</th>
                                 <th>Range (dBm)</th>
+                                <th>Quality</th>
+                                <th>Color</th>
                               </tr>
 
                               <tr>
-                                <td>RSCP LEV_-05</td>
-                                <td>RSCP < -120</td>                              
+                                <td> RSCP < -62</td>
+                                <td>Very Good Coverage</td>
+                                <td><canvas id="myCanvas" width="10" height="10"></canvas>
+                                        <script>
+                                          var canvas = document.getElementById('myCanvas');
+                                          var context = canvas.getContext('2d');
+                                          var centerX = canvas.width / 2;
+                                          var centerY = canvas.height / 2;
+                                          var radius = 10;
+
+                                          context.beginPath();
+                                          context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+                                          context.fillStyle = 'green';
+                                          context.fill();
+                                          context.lineWidth = 5;
+                                          context.strokeStyle = '#003300';
+                                          context.stroke();
+                                        </script></td>                              
                               </tr>
 
                               <tr>
-                                <td>RSCP LEV_-04</td>
-                                <td>-120 <= RSCP < -119</td>
+                                <td> -83 < RSCP < -77 </td>
+                                <td>Good Coverage</td>
+                                <td><canvas id="myCanvas1" width="10" height="10"></canvas>
+                                        <script>
+                                          var canvas = document.getElementById('myCanvas1');
+                                          var context = canvas.getContext('2d');
+                                          var centerX = canvas.width / 2;
+                                          var centerY = canvas.height / 2;
+                                          var radius = 10;
+
+                                          context.beginPath();
+                                          context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+                                          context.fillStyle = '#32CD32';
+                                          context.fill();
+                                          context.lineWidth = 5;
+                                          context.strokeStyle = '#003300';
+                                          context.stroke();
+                                        </script></td>
                               </tr>
 
                               <tr>
-                                <td>RSCP LEV_-03</td>
-                                <td>-119 <= RSCP < -118</td>
+                                <td>-95 < RSCP < -83</td>
+                                <td>Poor Coverage</td>
+                                <td><canvas id="myCanvas2" width="10" height="10"></canvas>
+                                        <script>
+                                          var canvas = document.getElementById('myCanvas2');
+                                          var context = canvas.getContext('2d');
+                                          var centerX = canvas.width / 2;
+                                          var centerY = canvas.height / 2;
+                                          var radius = 10;
+
+                                          context.beginPath();
+                                          context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+                                          context.fillStyle = '#000080';
+                                          context.fill();
+                                          context.lineWidth = 5;
+                                          context.strokeStyle = '#003300';
+                                          context.stroke();
+                                        </script></td>
                               </tr>
 
                               <tr>
-                                <td>RSCP LEV_-02</td>
-                                <td>-117 <= RSCP < -116</td>
+                                <td>-104 < RSCP < -95</td>
+                                <td>Bad Coverage</td>
+                                <td><canvas id="myCanvas3" width="10" height="10"></canvas>
+                                        <script>
+                                          var canvas = document.getElementById('myCanvas3');
+                                          var context = canvas.getContext('2d');
+                                          var centerX = canvas.width / 2;
+                                          var centerY = canvas.height / 2;
+                                          var radius = 10;
+
+                                          context.beginPath();
+                                          context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+                                          context.fillStyle = '#FF4500';
+                                          context.fill();
+                                          context.lineWidth = 5;
+                                          context.strokeStyle = '#003300';
+                                          context.stroke();
+                                        </script></td>
                               </tr>
 
                               <tr>
-                                <td>...</td>
-                                <td>...</td>
-                              </tr>
+                                <td>-104 < RSCP</td>
+                                <td>No Coverage</td>
+                                <td><canvas id="myCanvas4" width="10" height="10"></canvas>
+                                        <script>
+                                          var canvas = document.getElementById('myCanvas4');
+                                          var context = canvas.getContext('2d');
+                                          var centerX = canvas.width / 2;
+                                          var centerY = canvas.height / 2;
+                                          var radius = 10;
 
-                              <tr>
-                                <td>RSCP LEV_89</td>
-                                <td>-27 <= RSCP < -26</td>
-                              </tr>
-
-                              <tr>
-                                <td>RSCP LEV_90</td>
-                                <td>-26 <= RSCP < -25</td>
-                              </tr>
-
-                              <tr>
-                                <td>RSCP LEV_91</td>
-                                <td>-25 <= RSCP</td>
+                                          context.beginPath();
+                                          context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+                                          context.fillStyle = 'red';
+                                          context.fill();
+                                          context.lineWidth = 5;
+                                          context.strokeStyle = '#003300';
+                                          context.stroke();
+                                        </script></td>
                               </tr>
                         </table>
                     </div>
@@ -125,43 +191,156 @@
                         <h4>No: Noise Spectral Density. Unit: Watts/Hz (or mWatts/Hz)</h4>
                         <table style="width:70%">
                               <tr>
-                                <th>Ec/No</th>
                                 <th>Range (dB)</th>
+                                <th>Quality</th>
+                                <th>Color</th>
                               </tr>
 
                               <tr>
-                                <td>Ec/No_00</td>
-                                <td>Eclo < -24</td>                              
+                                <td>Ec/No < -5</td>
+                                <td>very Good</td>
+                                <td><canvas id="myCanvas5" width="10" height="10"></canvas>
+                                        <script>
+                                          var canvas = document.getElementById('myCanvas5');
+                                          var context = canvas.getContext('2d');
+                                          var centerX = canvas.width / 2;
+                                          var centerY = canvas.height / 2;
+                                          var radius = 10;
+
+                                          context.beginPath();
+                                          context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+                                          context.fillStyle = 'green';
+                                          context.fill();
+                                          context.lineWidth = 5;
+                                          context.strokeStyle = '#003300';
+                                          context.stroke();
+                                        </script></td>                              
                               </tr>
 
                               <tr>
-                                <td>Ec/No_01</td>
-                                <td>-24 <= Ecl0 < -23.5</td>
+                                <td>-5 < Ec/No < -8 </td>
+                                <td>Good</td>
+                                <td><canvas id="myCanvas6" width="10" height="10"></canvas>
+                                        <script>
+                                          var canvas = document.getElementById('myCanvas6');
+                                          var context = canvas.getContext('2d');
+                                          var centerX = canvas.width / 2;
+                                          var centerY = canvas.height / 2;
+                                          var radius = 10;
+
+                                          context.beginPath();
+                                          context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+                                          context.fillStyle = '#32CD32';
+                                          context.fill();
+                                          context.lineWidth = 5;
+                                          context.strokeStyle = '#003300';
+                                          context.stroke();
+                                        </script></td>
                               </tr>
 
                               <tr>
-                                <td>Ec/No_02</td>
-                                <td>-23.5 <= Eclo < -22.5</td>
+                                <td> - 8 < Ec/No < -12</td>
+                                <td>Poor</td>
+                                <td><canvas id="myCanvas7" width="10" height="10"></canvas>
+                                        <script>
+                                          var canvas = document.getElementById('myCanvas7');
+                                          var context = canvas.getContext('2d');
+                                          var centerX = canvas.width / 2;
+                                          var centerY = canvas.height / 2;
+                                          var radius = 10;
+
+                                          context.beginPath();
+                                          context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+                                          context.fillStyle = '#000080';
+                                          context.fill();
+                                          context.lineWidth = 5;
+                                          context.strokeStyle = '#003300';
+                                          context.stroke();
+                                        </script></td>
                               </tr>
 
                               <tr>
-                                <td>...</td>
-                                <td>...</td>
+                                <td>-12 < Ec/No < -14 </td>
+                                <td>Bad</td>
+                                <td><canvas id="myCanvas8" width="10" height="10"></canvas>
+                                        <script>
+                                          var canvas = document.getElementById('myCanvas8');
+                                          var context = canvas.getContext('2d');
+                                          var centerX = canvas.width / 2;
+                                          var centerY = canvas.height / 2;
+                                          var radius = 10;
+
+                                          context.beginPath();
+                                          context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+                                          context.fillStyle = '#FF4500';
+                                          context.fill();
+                                          context.lineWidth = 5;
+                                          context.strokeStyle = '#003300';
+                                          context.stroke();
+                                        </script></td>
                               </tr>
 
                               <tr>
-                                <td>Ec/No_47</td>
-                                <td>-1 <= Eclo < -0.5</td>
+                                <td>-14 < Ec/No < -16</td>
+                                <td>Bad</td>
+                                <td><canvas id="myCanvas9" width="10" height="10"></canvas>
+                                        <script>
+                                          var canvas = document.getElementById('myCanvas9');
+                                          var context = canvas.getContext('2d');
+                                          var centerX = canvas.width / 2;
+                                          var centerY = canvas.height / 2;
+                                          var radius = 10;
+
+                                          context.beginPath();
+                                          context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+                                          context.fillStyle = '#FF4500';
+                                          context.fill();
+                                          context.lineWidth = 5;
+                                          context.strokeStyle = '#003300';
+                                          context.stroke();
+                                        </script></td>
                               </tr>
 
                               <tr>
-                                <td>Ec/No_48</td>
-                                <td>-0.5 <= Eclo < 0</td>
+                                <td>-16 < Ec/No < -18</td>
+                                <td>Bad</td>
+                                <td><canvas id="myCanvas10" width="10" height="10"></canvas>
+                                        <script>
+                                          var canvas = document.getElementById('myCanvas10');
+                                          var context = canvas.getContext('2d');
+                                          var centerX = canvas.width / 2;
+                                          var centerY = canvas.height / 2;
+                                          var radius = 10;
+
+                                          context.beginPath();
+                                          context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+                                          context.fillStyle = '#FF4500';
+                                          context.fill();
+                                          context.lineWidth = 5;
+                                          context.strokeStyle = '#003300';
+                                          context.stroke();
+                                        </script></td>
                               </tr>
 
                               <tr>
-                                <td>Ec/No_49</td>
-                                <td>0 <= Ecl0</td>
+                                <td>Ec/No < -18</td>
+                                <td>Very Bad</td>
+                                <td><canvas id="myCanvas11" width="10" height="10"></canvas>
+                                        <script>
+                                          var canvas = document.getElementById('myCanvas11');
+                                          var context = canvas.getContext('2d');
+                                          var centerX = canvas.width / 2;
+                                          var centerY = canvas.height / 2;
+                                          var radius = 10;
+
+                                          context.beginPath();
+                                          context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+                                          context.fillStyle = 'red';
+                                          context.fill();
+                                          context.lineWidth = 5;
+                                          context.strokeStyle = '#003300';
+                                          context.stroke();
+                                        </script></td>
                               </tr>
                         </table>
                     </div>
@@ -208,16 +387,13 @@
                         <table style="width: 100%">
                             
                             <tr>
-                              <td rowspan="15">KPI</td>
+                              <td rowspan="14">KPI</td>
                             
-                              <td rowspan="4">Accessibility</td>
+                              <td rowspan="3">Accessibility</td>
                               <td>Voice Call Setup Success Rate - Voice CSSR</td>
-                              <td>RRS connection setup + success / RAB setup + success </td>
+                              <td>RRS connection Attempt + RRS connection success / RAB connection Attempt + RAB connection success  </td>
                             </tr>
-                            <tr>
-                              <td>Voice Call Setup Success Rate - Voice CSSR (Mode Auto)</td>
-                              <td>Call setup / Call attempt</td>
-                            </tr>
+                            
                             <tr>
                               <td>R99 Data services CSSR</td>
                               <td>Successful attempt to access PS network / attempt to Access PS network</td>
@@ -259,7 +435,7 @@
                               <td>IRATHO success output CS / IRATHO AttRelocPrep Output CS</td>
                             </tr>  
                             <tr>
-                              <td rowspan="4">Throughput</td>
+                              <td rowspan="4">Integrity</td>
                               <td>R99 FTP DOWNLINK Application Throughput</br>
                               R99 FTP UPLINK Application Throughput<br>
                               HSDPA Scheduled rate (UE Cat 14)</td>
